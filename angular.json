@@ -3,17 +3,17 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "first-app": {
+    "APM": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "app",
+      "prefix": "pm",
       "schematics": {},
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/first-app",
+            "outputPath": "dist/APM",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -51,18 +51,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "first-app:build"
+            "browserTarget": "APM:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "first-app:build:production"
+              "browserTarget": "APM:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "first-app:build"
+            "browserTarget": "APM:build"
           }
         },
         "test": {
@@ -78,7 +78,8 @@
             "scripts": [],
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/api"
             ]
           }
         },
@@ -96,7 +97,7 @@
         }
       }
     },
-    "first-app-e2e": {
+    "APM-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -104,11 +105,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "first-app:serve"
+            "devServerTarget": "APM:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "first-app:serve:production"
+              "devServerTarget": "APM:serve:production"
             }
           }
         },
@@ -124,5 +125,5 @@
       }
     }
   },
-  "defaultProject": "first-app"
+  "defaultProject": "APM"
 }
