@@ -26,6 +26,7 @@ export class ProductListComponent implements OnInit {
     filteredProducts: IProduct[];
     products: IProduct[];
 
+    
     constructor(private productService: ProductService){
         
     }
