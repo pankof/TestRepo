@@ -1,15 +1,15 @@
-import { TestBed, async, inject } from '@angular/core/testing';
+// import { TestBed, async, inject } from '@angular/core/testing';
 
-import { ProductDetailGuard } from './product-detail.guard';
+// import { ProductDetailGuard } from './product-detail.guard';
 
-describe('ProductDetailGuard', () => {
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      providers: [ProductDetailGuard]
-    });
-  });
+// describe('ProductDetailGuard', () => {
+//   beforeEach(() => {
+//     TestBed.configureTestingModule({
+//       providers: [ProductDetailGuard]
+//     });
+//   });
 
-  it('should ...', inject([ProductDetailGuard], (guard: ProductDetailGuard) => {
-    expect(guard).toBeTruthy();
-  }));
-});
+//   it('should ...', inject([ProductDetailGuard], (guard: ProductDetailGuard) => {
+//     expect(guard).toBeTruthy();
+//   }));
+// });
